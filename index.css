@@ -1,0 +1,84 @@
+* {
+  transition: all 0.2s ease-in-out;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, "Sour Gummy", sans-serif,"Dancing Script"
+}
+
+body {
+  background: #161623;
+  background-image: url(pic.jpeg);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+  background: rgba(107, 107, 107, 0.1);
+  background-image: image(url(pic.jpeg));
+  border-radius: 4px;
+  height: 80vh;
+  width: 80vw;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 700px;
+    max-width: 100vw;
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+.birthday image{
+  height: 100px;
+  width: 80px;
+}
+
+.text {
+  padding: 1em;
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
+}
+
+.text h1 {
+  font-family: "Sour Gummy";
+  font-size: 70px;
+}
+.text p{
+  font-family: "Dancing Script";
+  font-size: 30px;
+}
+.text img{
+  width: 100px;
+  height: 100px;
+  
+}
